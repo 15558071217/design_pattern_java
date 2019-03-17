@@ -24,7 +24,7 @@ public class MyProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("代理开始");
-//        不可调用设计到代理对象toString的方法，否则会死循环，一直进入此方法，如下：
+//        不可调用涉及到代理对象toString的方法，否则会死循环，一直进入此方法，如下：
 //        System.out.println(proxy);//被代理对象
 //        System.out.println(target == proxy);
 

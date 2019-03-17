@@ -7,6 +7,8 @@ package com.ethan.proxy.jdk;
  * 租房接口
  */
 public interface Renting {
-    
-    void rent();
+
+    int rent(int num);
+
+    int rentParking();
 }
